@@ -7,10 +7,10 @@ The main aim is to understand employee details like salary, department, performa
 
 By using SQL queries, I have found different insights that can help HR teams make better decisions.
 
-###Dataset
+## Dataset
 link: https://www.kaggle.com/datasets/rhuebner/human-resources-data-set
 
-####Project Objectives
+## Project Objectives
 1. To check how employees are divided across departments.
 2. To find which department gives higher salaries.
 3. To see employee performance and satisfaction level.
