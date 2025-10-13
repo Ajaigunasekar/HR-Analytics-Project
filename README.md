@@ -21,10 +21,11 @@ link: https://www.kaggle.com/datasets/rhuebner/human-resources-data-set
 PostgreSQL – for writing and running queries.
 HRDataset_v14.csv – dataset from Kaggle.
 
-##schema 
+## Schema 
 ```sql
 drop table if exists Employee;
-create table Employee(
+create table Employee
+(
 Employee_Name varchar(30),
 EmpID int,
 MarriedID int,
@@ -61,3 +62,5 @@ LastPerformanceReview_Date	date,
 DaysLateLast30	int,
 Absences int
 );
+
+## solurons
