@@ -64,6 +64,8 @@ Absences int
 );
 ```
 ## Solutions
-# 1. Display all employee details from the HR dataset.
+### 1. Display all employee details from the HR dataset.
 
+```sql
 select * from employee;
+```
