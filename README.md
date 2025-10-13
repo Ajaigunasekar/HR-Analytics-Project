@@ -69,3 +69,12 @@ Absences int
 ```sql
 select * from employee;
 ```
+### 2.Find the total number of employees in the company.
+```sql
+select count(empid)from employee;
+```
+
+### 3.List all unique departments available.
+```sql
+select distinct department from employee;
+```
