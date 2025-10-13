@@ -62,5 +62,8 @@ LastPerformanceReview_Date	date,
 DaysLateLast30	int,
 Absences int
 );
+```
+## Solutions
+# 1. Display all employee details from the HR dataset.
 
-## solurons
+select * from employee;
