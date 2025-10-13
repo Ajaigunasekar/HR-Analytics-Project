@@ -15,6 +15,7 @@ By using SQL queries, I have found different insights that can help HR teams mak
 5. To practice SQL queries like filtering, joining, grouping, and subqueries.
    
 ## Dataset
+For this project I used Kaggle dataset
 link: https://www.kaggle.com/datasets/rhuebner/human-resources-data-set
 
 ## Tools Used
