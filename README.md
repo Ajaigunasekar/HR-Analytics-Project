@@ -78,3 +78,88 @@ select count(empid)from employee;
 ```sql
 select distinct department from employee;
 ```
+## 4.Show the names and job titles of employees who work in the IT department.
+
+```sql
+select employee_name, positions as Job_tittle
+from employee 
+where department = 'IT/IS';
+```
+
+## 5.Retrieve details of employees hired after the year 2015.
+```sql
+select Employee_Name, DateofHire from employee
+where DateofHire > '2015/12/31'
+order by DateofHire;
+```
+## 6.Find how many employees are in each department.
+```sql
+select count(employee_name) as employee_count, department
+from employee
+group by department
+order by employee_count desc ;
+```
+## 7.Calculate the average salary for each department.
+```sql
+select department, round (Avg(salary),2)as avg_salary
+from employee
+group by department
+order by avg_salary desc;
+```
+## 8.Display the top 5 highest-paid employees in the company.
+```sql
+select employee_name, salary
+from employee
+order by salary desc 
+limit 5;
+```
+## 9.Find the total number of male and female employees.
+```sql
+select GenderID as sex, count(*)
+from employee
+group by GenderID
+```
+## 10.List all employees who are no longer working in the company.
+```sql
+select employee_name, EmploymentStatus
+from employee
+where EmploymentStatus <> 'Active';
+```
+## 11.Identify departments where the average salary is greater than ₹70,000.
+```sql
+select department, Avg(salary)as avg_salary
+from employee
+group by department
+having Avg(salary) > 70000
+order by avg_salary desc;
+```
+## 12.Find each manager’s total team salary expense.
+```sql
+select Managername, 
+sum(salary) as total_team_salary
+from employee
+group by Managername
+order by total_team_salary desc;
+```
+## 13.Display employees whose performance score is “Exceeds Expectations.”
+```sql
+select employee_name, department, positions, PerformanceScore
+from employee
+where PerformanceScore = 'Exceeds'
+```
+## 14.Find the number of employees hired each year.
+```sql
+select count(employee_name) as Num_hires, DateofHire
+from employee
+group by DateofHire
+order by DateofHire ;
+```
+## 15.Identify the top 3 departments with the highest number of terminations.
+```sql
+select department, count (Termd) as termination_count
+from employee
+where Termd = '1'
+group by department
+order by termination_count desc
+limit 3;
+```
